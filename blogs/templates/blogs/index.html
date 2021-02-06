@@ -1,0 +1,48 @@
+{% extends 'blogs/base.html' %}
+
+{% block page_header %}
+
+    <div class="jumbotron">
+        <h1 class="display-3">Welcome to our blog!</h1>
+
+        <p class="lead">Post what you want whenever you want. It's free!
+            Join us and enjoy! Let's share the knowledge, curiosities and news
+            to the world.</p>
+
+        <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+            role="button">Register to create and manage your posts &raquo;</a>
+    </div>
+
+{% endblock page_header %}
+
+{% block content %}
+
+    <div class="form-group">
+        <h3>
+            <a href="{% url 'blogs:new_post' %}">Add a new post</a>
+        </h3>
+    </div>
+
+    <h4>Posts:</h4>
+
+        {% for post in blogpost %}
+            <div class="card mb-3">
+                <h4 class="card-header">
+                    <a href="{% url 'blogs:edit_blogpost' post.id %}">{{post}}</a> |
+                    <small>{{post.date_added|date:'M d, Y H:i'|linebreaks }}</small>
+                </h4>
+                <div class="card-body">
+                    {{post.text}}
+                </div>
+            </div>
+        {% empty %}
+            <p>No post have been added yet.</p>
+        {% endfor %}
+
+    <div class="form-group">
+        <h3>
+            <a href="{% url 'blogs:new_post' %}">Add a new post</a>
+        </h3>
+    </div>
+
+{% endblock content %}
