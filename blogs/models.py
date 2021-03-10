@@ -10,5 +10,5 @@ class BlogPost(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        """Returna a string representation of the model."""
+        """Return a string representation of the model."""
         return self.title[:100]

@@ -1,7 +1,8 @@
-Public Blog
+Public Blog with REST API
 ======
 
 Similar to the Learning Log, this project was done on its own. The purpose of the web app is give to your users a local to externalize the contents of your mind to the world. Something like the Reddit forum.
+The blog has a REST API made using Django Rest Framework.
 ------
 
 ![Badge](https://img.shields.io/badge/Blog-Public%20Blog-yellowgreen)
@@ -16,6 +17,12 @@ To post the user must be logged and only the onwer post can edit it.
 - Mobile Screenshot  
 ![](screenshots/3.png)  
 ![](screenshots/4.png)
+
+## REST API
+
+A model based REST API was created using Django Rest Framework.
+
+
 
 ## Live Demo
 
