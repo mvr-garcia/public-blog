@@ -18,16 +18,19 @@ To post the user must be logged and only the onwer post can edit it.
 ![](screenshots/3.png)  
 ![](screenshots/4.png)
 
-## REST API
-
-A model based REST API was created using Django Rest Framework.
-
-
-
 ## Live Demo
 
 ![](screenshots/heroku.png)  
 The project is live on Heroku, to visit click on [here](https://blog2all.herokuapp.com/).
+
+## REST API
+
+A model based REST API was created using Django Rest Framework.
+
+![](screenshots/rest_api.png)
+
+To access the Rest API, click below:
+[https://blog2all.herokuapp.com/api/blogpost/](https://blog2all.herokuapp.com/api/blogpost/)
 
 ## Getting started
 
@@ -37,6 +40,7 @@ To run the project, you will need to install the following software:
 - [Django 3.1.*:  A Python Web framework.](https://pypi.org/project/Django/)
 - [Gunicorn 20.*: A Python WSGI HTTP Server for UNIX, necessary to prepare the server on deploy.](https://pypi.org/project/gunicorn/)
 - [Psycopg2 2.8.*: A PostgreSQL database adapter for the Python programming language.](https://pypi.org/project/psycopg2/)
+- [Django REST framework: A powerful and flexible toolkit for building Web API.](https://www.django-rest-framework.org/)
 
 ### Features
 
